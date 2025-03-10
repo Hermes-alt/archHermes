@@ -1,0 +1,125 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #dddbdbce;
+    display: flex;
+    flex-direction: column;
+}
+.barreNav{
+    background-color: #6a60602c;
+    color: rgb(52, 42, 42);
+    padding:10px 0;
+    text-align: center;
+}
+.barreNav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.barreNav ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+.barreNav ul li a{
+    text-decoration: none;
+    color: rgb(213, 128, 24);
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.barreNav ul li a:hover{
+    background-color: #b2a9a9;
+}
+/*Page acceuil*/
+.acceuil{
+    display: inline;
+    width: 100%;
+    height: 100%;
+    background-image: url(pexels-jeshoots-238118.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+    position: relative;
+}
+.elements{
+    backdrop-filter: blur(5px);;
+    margin-bottom: 15px;
+    padding: 15px;
+    width: 50%;
+   position: relative;
+   /border: 1px solid;
+}
+.elements#introduction p{
+    color: rgb(210, 89, 13)}
+.elements h1{
+    font-size: 30px;
+    color: rgba(210, 136, 18, 0.807);
+}
+.elements h2, h3, p, li, a{
+    color: rgb(8, 6, 0);
+}
+.elements#photos{
+    position: absolute;
+    top: 12px;
+    right: 0;
+    margin: 0;
+    width: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.elements#photos img{
+    width: 60%;
+    height: 70%;
+}
+.elements#Sommaire ul li  {
+    list-style: none;
+    margin: 6px;
+    text-decoration: none;
+}
+.elements#Sommaire ul li a{
+    color: rgba(214, 64, 14, 0.99);
+    text-decoration: none;
+}
+.elements#Sommaire li a:hover{
+    color: black;
+}
+@media  screen and (max-width: 1000px) {
+
+
+    .elements{
+        
+    }
+       .elements#Titre{
+            font-size: 60%;
+            padding: 0;
+            margin: 0;
+       }
+
+       .elements#introduction {
+        width: 100%;
+       }
+       .elements#introduction p{
+        
+       }
+       .elements#Sommaire {
+        width: 100%;
+       }
+       .elements#Sommaire ul li a{
+            font-size: 14px;
+       }
+       .elements#debut{
+       width: 100%;
+    }
+    .elements#Sommaire ul li a:hover{
+        color: #4a12b2;
+    }
+}
